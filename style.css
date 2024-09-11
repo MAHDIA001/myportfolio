@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.514);
+  background-color: rgba(0, 0, 0, 0.904);
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover {
+  background-color: rgb(21, 101, 221);
+  color: white;
+}
+
+.menu-button {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.904);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.151);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.content {
+  margin-left: 8%;
+  margin-top: 10%;
+  font-size: 16px;
+  display: flex;
+}
+
+.item-1 h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.paragraph {
+  margin-bottom: 30px;
+}
+
+.content img {
+  width: 40%;
+  margin-right: 8%;
+  margin-left: 2%;
+}
+
+.hire {
+  text-decoration: none;
+  background-color: rgb(21, 101, 221);
+  color: white;
+  padding: 10px;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.151);
+}
+
+.hire:hover {
+  background-color: rgba(0, 0, 0, 0.904);
+}
+
+#about {
+  margin-top: 10%;
+}
+
+#about h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin-left: 30%;
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+.container {
+  text-align: left;
+  margin-left: 8%;
+  display: flex;
+  margin-bottom: 8%;
+}
+
+.container img {
+  width: 40%;
+  margin-right: 8%;
+  margin-left: 2%;
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+.proj,
+.contact {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  gap: 2em;
+  margin: 2%;
+}
+
+.animation,
+.web,
+.graphic_design {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.151);
+  text-align: center;
+}
+
+#contact h1 {
+  text-align: center;
+  margin: 2%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  text-align: left;
+  margin: 1%;
+}
+
+.form input {
+  width: 40%;
+  height: 25px;
+  margin: 1%;
+}
+
+textarea {
+  width: 40%;
+  margin: 1%;
+}
+
+.form a {
+  text-decoration: none;
+  background-color: rgb(21, 101, 221);
+  color: white;
+  padding: 10px;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.151);
+  margin: 1%;
+  width: 3.5%;
+}
+
+.form a:hover {
+  background-color: rgba(0, 0, 0, 0.904);
+}
